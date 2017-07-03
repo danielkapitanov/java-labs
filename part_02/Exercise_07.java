@@ -12,5 +12,22 @@ import java.util.Scanner;
  *
  */
 public class Exercise_07 {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a number from 1 to 1 000 000 000: ");
+
+        int i = input.nextInt();
+
+        int years;
+        double days;
+
+
+
+        years=i/(365*24*60); //get the number of years
+        days=(double)i%years;
+
+        System.out.println(years+" years and "+days+" days");
+    }
 
 }

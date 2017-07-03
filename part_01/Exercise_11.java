@@ -16,7 +16,22 @@ public class Exercise_11 {
 
     public static void main(String[] strings) {
 
-        //...
+        int year = 31556926; //one year has 31 556 926 seconds.
+        int population = 380123456;
+
+        for (int b=0;b<=year*3;b+=6){
+            population++;
+        }
+
+        for (int d=0;d<=year*3;d+=12){
+            population--;
+        }
+
+        for (int i=0;i<=year*3;i+=40){
+            population++;
+        }
+
+        System.out.println("In 3 years the US population will be: "+population+" people");
 
 
     }

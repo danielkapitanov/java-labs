@@ -17,10 +17,16 @@ public class Exercise_01 {
 
     public static void main(String[] args) throws java.io.IOException {
 
-        Scanner input = new Scanner(System.in);
+        double fahrenheit;
 
         System.out.print("Enter a degree in Celsius: ");
 
+        Scanner sc = new Scanner(System.in);
+        double celsius = sc.nextInt();
+
+        fahrenheit=9*(celsius/5)+32;
+
+        System.out.println(celsius+" degrees in celsius is "+fahrenheit+" degrees fahrenheit");
 
         
     }

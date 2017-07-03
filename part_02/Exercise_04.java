@@ -14,6 +14,14 @@ import java.util.Scanner;
 public class Exercise_04 {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double kilos;
 
+        System.out.print("Enter pounds: ");
+        double pounds = input.nextDouble();
+
+        kilos=pounds*0.454;
+
+        System.out.println(pounds+" pounds are "+kilos+" kilos.");
     }
 }

@@ -10,7 +10,14 @@ package Part_01;
 public class Exercise_09 {
 
     public static void main(String[] strings) {
+        double side1=2.4;
+        double side2=6.4;
+        double perimeter, area;
 
-        //...
+        perimeter=2*side1 + 2*side2;
+        area=side1*side2;
+
+        System.out.println("The perimeter is: "+perimeter);
+        System.out.println("The area is: "+area);
     }
 }

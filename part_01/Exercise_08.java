@@ -14,6 +14,8 @@ public class Exercise_08 {
 
     public static void main(String[] args) {
 
-        //...
+        System.out.println("The perimeter is: "+2*Math.PI*radius);
+        System.out.println("The area is: "+Math.PI*radius*radius);
+
     }
 }

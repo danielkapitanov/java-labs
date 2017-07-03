@@ -17,20 +17,27 @@ import java.util.Scanner;
  */
 
 public class Exercise_11 {
-    public static void main(String[] Strings) {
-
+    public static void main(String[] args) {
+        int i=1;
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter investment amount: ");
-        //...
+        int inv = input.nextInt();
 
         System.out.print("Enter annual interest rate in percentage: ");
-        //...
+        double rate = input.nextDouble();
 
         System.out.print("Enter number of years: ");
-        //...
-        //...
-        //...
+        int years = input.nextInt();
+
+        double value=(double) inv;
+
+        do {
+            value = value + value * rate / 100;
+            i++;
+        } while (i<=years);
+
+        System.out.println("The future value will be: "+value);
     }
 }
 

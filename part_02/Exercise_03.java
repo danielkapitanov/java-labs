@@ -14,6 +14,14 @@ import java.util.Scanner;
 public class Exercise_03 {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double meters;
 
+        System.out.print("Enter feet: ");
+        double feet = input.nextDouble();
+
+        meters=feet*0.305;
+
+        System.out.println(feet+" feet are "+meters+" meters.");
     }
 }
