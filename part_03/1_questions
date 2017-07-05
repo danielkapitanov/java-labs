@@ -4,39 +4,89 @@ Answer the following questions
 
 1) What is an instance variable?
 
+Variables that constitute a class
+
 2) How do you create a new object?
+
+Classname object = new Classname();
 
 3) After creating a new object, how do you set that objects instance variables?
 
+object.variable = ?;
+
 4) What is a reference variable? Why do you need to be careful with reference variables?
+
+A variable that refers to an object.
+We need to be careful because they simply refer to an object and do not hold any value.
 
 5) How many methods can you have in a class?
 
+as many as you want
+
 6) How do you exit a method at any point?
+
+return
 
 7) What is the method signature required to return an "int" from a method?
 
+int method(){
+...
+return intValue;
+}
+
 8) Assuming "int num = 10", what is the syntax to return "num" from a method?
 
+int method(){
+...
+return num;
+}
+
 9) How do you pass a parameter to a method?
+
+int method (parameter1, parameter2) {
+}
 
 10) What is the method signature for a method named sum() that takes two int parameters
     and returns their sum as in int?
 
+int method (int parameter1, int parameter2){
+return (parameter1+parameter2)
+}
+
 11) What is a constructor?
+
+A constructor initializes an object when it is created (it gives it default values that are provided by the constructor)
 
 12) How does Java treat a class without a constructor?
 
+Java has a default constructor for classes without constructer, where all values are set to 0, null or false.
+
 13) What would the constructor for "public class Animal" look like?
+
+Animal (parameters) {
+variables
+}
 
 14) What is the effect of passing parameters to a constructor?
 
+It automatically initializes the instant variables when constructing the object
+
 15) When should you pass parameters to a constructor?
+
+When you want to initialize the instance variables of a newly created object straight away.
 
 16) What does the finalize() method do?
 
+It gets executed just before garbage collection is about to occur to ensure clean destruction.
+
 17) What does the "this" keyword do?
+
+It refers to the object on which the method was called.
 
 18) When should you use the "this" keyword?
 
+If you have the same name for a local variable and an instance variable.
+
 19) Write an example of the "this" keyword in action.
+
+

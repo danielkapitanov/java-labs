@@ -27,6 +27,7 @@ public class Exercise_07 {
         years=i/(365*24*60); //get the number of years
         days=(double)i%years;
 
+
         System.out.println(years+" years and "+days+" days");
     }
 
