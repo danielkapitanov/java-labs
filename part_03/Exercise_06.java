@@ -6,7 +6,7 @@ class Exercise_06 {
 
     // the goal of this method is to print out the local time in any given timezone
     public static void main(String[] strings) {
-        
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter the time zone offset to GMT (ie, -8 or 8): ");
@@ -42,8 +42,11 @@ class Exercise_06 {
             time = "AM";
         }
 
-        else {
+        else if (currentClockHour > 12){
             currentClockHour = currentClockHour -12;
+            time = "PM";
+        }
+        else if (currentClockHour==12){
             time = "PM";
         }
 

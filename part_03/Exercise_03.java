@@ -16,7 +16,7 @@ class Exercise_03 {
 
         for (int i=0; i<1000; i++){
             Random r = new Random();
-            int Result = r.nextInt(13-1) + 1;
+            int Result = r.nextInt(12) + 1;
             System.out.println(getMonthName(Result));
         }
         // use a for loop to iterate 1000 times {
