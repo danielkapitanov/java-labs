@@ -3,60 +3,128 @@ Answer the following:
 
 1) What are the access control modifiers (acm) provided in Java?
 
+they specify the privacy settings of the variables/classes/methods
+
 2) Briefly explain each acm and how they differentiate from each other?
+
+private - accessible only within the class
+public - accessible from all other classes
+protected - accessible from classes within the same package
 
 3) Why do we use acm's?
 
+to prevent data from being accessed and altered outside of where it is necessary
+
 4) What is the risk of not using acm's?
+
+everyone can change variables, objects, etc.
 
 5) Write a method signature that receives an object of type "Car" as a parameter.
 
+int methodExample (Car car1){}
+
 6) Write a method signature that returns an object of type "Car".
+
+Car methodExample(int x){}
 
 7) What is a very important consideration to keep in mind when passing objects (hint: by reference) from one
 method to another?
 
+that you are passing a reference variable, and any changes that are made within the method remain on the object.
+
 8) What is method overloading?
+
+When you create several version of a method that differ in terms of what parameters are used.
+This is done so that the program can deal with different types of input.
 
 9) Why is method overloading useful? (Hint: as compared to the implementation in the C language.)
 
+Its useful because you enable your program to deal with different kinds of input, but with the same interface (polymorphism)
+
 10) How do you overload a method? What signifies that a method is being overloaded?
+
+you write the same method name, but with different parameters
 
 11) Below, by writing just the method signature, demonstrate overloading a method 3 times.
 
+method (int x, int y){}
+method (int x){}
+method (String args){}
+
 12) How do you overload a constructor? What signifies that a constructor is being overloaded?
+
+the parameters are different
 
 13) Why do we overload constructors?
 
+to create objects depending on different kinds of input
+
 14) Below, by writing just the constructor signature, demonstrate overloading a constructor 3 times.
+
+Class (int x, int y){}
+Class (double y) {}
+Class (char c) {}
 
 15) What is recursion?
 
+a method calling itself
+
 16) What important considerations must you keep in mind when using recursion?
+
+always have an escape clause
 
 17) How do you make a method recursive?
 
+when you make it call itself
+
 18) How do you escape a recursive method?
+
+always have an escape clause
 
 19) Explain what "static" is all about?
 
+static variables are the same for all objects of the class
+static methods can be called without creating an object
+
 20) When should you use "static"?
+
+when you have a variable that should always be the same within all objects,
+ or when you want to call a method without creating an object of the class
 
 21) What differentiates static variables from instance variables?
 
+static variables are the same for every objects, while every object possesses their own copy of the instance variables
+
 22) What is a the quicksort? Briefly describe how the quicksort works.
+
+quicksort is the most efficient sorting algorithm
+it picks a value in the middle of an array and puts all of the greater values on one side of it,
+and all of the lesser values on the other side.
+The quicksort uses recursion and gets called again on the two halves and so on.
 
 23) What is a nested, or inner, class?
 
+a class within a class
+
 24) What is the scope of a nested class?
+
+the outer class
 
 25) What is a variable-arity method?
 
+a method that can take an unspecified number of parameters and store them in an array
+
 26) What makes a variable-arity method unique? When should you use it?
+
+you should use it when you don't know how many integers for example, are going to be passed to it.
 
 27) What is the shorthand name for variable-arity?
 
+varargs
+
 28) Why important considerations must you keep in mind when using variable-arity methods? (hint: ambiguity)
+
+varargs must always be the last parameter to avoid ambiguity.
 
 
 

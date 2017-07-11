@@ -1,5 +1,7 @@
 package part_04;
 
+import java.util.Scanner;
+
 /**
 
  Read in 10 integers from the user. Place all 10 integers into an array in the order they were received.
@@ -13,3 +15,23 @@ package part_04;
 
  */
 
+public class Exercise_01 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Input 10 ints pls: ");
+        int nums[]=new int[10];
+        for (int x=0; x<nums.length;x++){
+            int i=input.nextInt();
+            nums[x]=i;
+        }
+
+        for (int x=1; x<nums.length;x+=2){
+            System.out.println(nums[x]+" ");
+        }
+
+        for (int x=nums.length-2; x>=0;x-=2){
+            System.out.println(nums[x]+" ");
+        }
+
+    }
+}

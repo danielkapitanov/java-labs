@@ -11,3 +11,17 @@ package part_04;
  40 41 42 43 44 45 46 47 48 49
 
  */
+
+public class Exercise_03{
+    public static void main(String[] args) {
+        int table[][]=new int[5][10];
+
+        for (int t=0;t<5;t++){
+            for(int i=0;i<10;i++){
+                table[t][i]=(t*10)+i;
+                System.out.print(table[t][i]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
