@@ -8,3 +8,4 @@ extend another subclass which extends the super class. Each subclass should only
 that apply to that subclass, ie Animal -> Mammal -> Whale.
 3) Make use of the keyword "super" in at least two constructors.
 4) Write an interface with at least 3 methods. Have the superclass implement this interface.
+
