@@ -1,29 +1,84 @@
 
 1) Describe the exception hierarchy.
-This is not a test
+
+Throwable>Exception>All Exceptions
+
 2) What is a try/catch statement?
+
+try {
+//code that might cause an exception
+} catch (abovementioned exception) {
+//do something in case the exception occurs
+}
 
 3) Why do we use try/catch statements?
 
+So that exceptions can be caught and dealt with instead of crashing the program
+
 4) Write a full example of a try/catch/finally statement that catches two distinct exceptions
+
+try {
+//something
+} catch (ArithmeticException a) {
+sout("Can't divide by zero");
+} catch (IndexOutOfBoundsException i) {
+sout("Index out of bounds");
+} finally {
+sout("Process finished");
+}
 
 5) What does it mean to "throw" an exception? How does it work?
 
+To pass an exception to a catch statement by the use of the keyword 'throw'
+
 6) What happens if your application encounters an exception and you don't catch it or throw it?
+
+The program is gonna crash (JVM is going to catch it)
 
 7) When catching exception in an inheritance hierarchy, should you catch the subclass exception or the
 superclass exception first? Why?
 
+Subclass first, because the superclass will catch everything so if it is first it will never go to the subclass exception catch clause.
+
 8) Write a nested try/catch statement.
+
+try {
+// something
+//something
+try {
+//something
+} catch (Exception) {
+//deal with exception
+}
+} catch (Exception) {
+//deal with exception
+}
 
 9) What does it mean to rethrow an exception?
 
+to throw it back to the calling method for it to deal with
+
 10) What are the 7 methods that come with the Throwable class?
+
+fillInStackTrace()
+getLocalizedMessage()
+getMessage()
+printStackTrace()
+=(PrintStream stream)
+=(PrintWriter stream)
+toString()
 
 11) What does the "finally" block do?
 
+executes statements in the end of the try/catch statement
+
 12) When is the finally block executed? Will it ever not be executed?
+
+it is always executed after a try catch statement
 
 13) What are the three recently added features to Java exceptions?
 
+try-with-resources
+multi-catch
+final rethrow
 
